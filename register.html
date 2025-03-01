@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('./Images/registerImg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .register-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+            text-align: center;
+            width: 300px;
+        }
+
+        .register-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .register-container input[type="text"],
+        .register-container input[type="tel"],
+        .register-container input[type="password"],
+        .register-container input[type="email"],
+        .register-container input[type="submit"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .register-container input[type="submit"] {
+            background-color: #13357B;
+            color: white;
+            cursor: pointer;
+        }
+
+        
+        .register-link {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .register-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        #home{
+        margin-top:1.5rem;
+        }
+        
+        #home a{
+         color: #fff;
+         background-color:#13357B;
+         padding:0.5rem;
+         border-radius:0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <h2>Registration</h2>
+        <form action="Cregi" method="post">
+            <input type="text" name="cname" placeholder="Enter Username" required="true">
+            <input type="tel" name="cphone" maxlength="10" placeholder="Enter Mobile No." required ="true">
+            <input type="email" name="cgmail" placeholder="Enter Email Id" required="true">
+            <input type="password" name="cpassword" placeholder="Create Password" required="true">
+            <input type="submit" value="Register">
+        </form>
+        <div class="register-link">
+            <p>Already have an account? <a href="./cLogin.html">Login</a></p>
+           <p id="home" >Go to Home Page <a href="./index.html">Home</a></p>
+        </div>
+    </div>
+</body>
+</html>

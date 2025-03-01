@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('./Images/background_bg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+          
+        }
+        
+            
+     /* CSS styles for navbar */
+    .navbar {
+      background-color: #13357B; /* Background color of navbar */
+      color: #fff; /* Text color */
+      border-radius: 4px; 
+      padding: 1rem; /* Padding around navbar items */
+      display: flex; /* Use flexbox for layout */
+      justify-content: space-between; /* Space items evenly along the main axis */
+      align-items: center; /* Center items vertically */
+    }
+
+    .navbar .left {
+      /* Styles for left side */
+    }
+
+    .navbar .right {
+      /* Styles for right side */
+    }
+    
+    .right a{
+    	 color: #007bff;
+         text-decoration: none;
+    }
+
+    .right a{
+      background-color: #fff; /* Background color of logout button */
+      color: #333; /* Text color */
+      border: none; /* Remove border */
+      padding: 8px 16px; /* Padding inside button */
+      border-radius: 4px; /* Add border radius */
+      cursor: pointer; /* Change cursor on hover */
+      transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+    }
+
+    .right a:hover {
+      background-color: #ddd; /* Background color on hover */
+      color: #000; /* Text color on hover */
+    }
+    
+        
+        
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+            text-align: center;
+            width: 300px;
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            margin:0 auto;
+            position: relative;
+            top:8rem;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"],
+        .login-container input[type="submit"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .login-container input[type="submit"] {
+            background-color: #13357B;
+            color: white;
+            cursor: pointer;
+        }
+
+        .register-link {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .register-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        #home{
+        margin-top:1.5rem;
+        }
+        
+        #home a{
+         color: #fff;
+         background-color:#13357B;
+         padding:0.5rem;
+         border-radius:0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="left">Maharashtra Travels</div> <!-- Adjust "Username" with the actual username -->
+  <div class="right">
+    <a href="./index.html">Home</a>
+  </div>
+</div>
+
+
+    <div class="login-container">
+        <h2>Admin Login</h2>
+        <form action="Admin" method="post">
+            <input type="text" name="username" placeholder="Admin Name" required>
+            <input type="password" name="password" placeholder="Admin Password" required>
+            <input type="submit" value="Login">
+        </form>
+        <div class="register-link">
+           <!--  <p id="home" >Go to Home Page <a href="./index.html">Home</a></p>  -->
+            
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Maharashtra Travels - Tourism Website</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                            class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                            class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                            class="fab fa-instagram fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i
+                            class="fab fa-youtube fw-normal"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <div class="dropdown">
+                        <a href="#" class="dropdown-toggle text-light" data-bs-toggle="dropdown"><small><i
+                                    class="fa fa-home me-2"></i> My Dashboard</small></a>
+                        <div class="dropdown-menu rounded">
+                            <a href="./index.html" class="dropdown-item"><i class="fas fa-power-off me-2"></i> LogOut</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="m-0"><i class="fa fa-map-marker-alt me-3"></i>Maharashtra Travels</h1>
+                <!-- <img src="img/logo.png" alt="Logo"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumb">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h3 class="text-white display-3 mb-4">Online Booking</h1>
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+
+                    <li class="breadcrumb-item active text-white">Online Booking</li>
+                </ol>
+        </div>
+    </div>
+    <!-- Header End -->
+
+      <!-- Destination Start -->
+      <div class="container-fluid destination py-5">
+        <div class="container py-5">
+            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                <h5 class="section-title px-3">Destination</h5>
+                <h1 class="mb-0">Popular Destinations</h1>
+            </div>
+            <div class="tab-class text-center">
+                <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
+                    <li class="nav-item">
+                        <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill active"
+                            data-bs-toggle="pill" href="#tab-1">
+                            <span class="text-dark" style="width: 150px;">All</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="d-flex py-2 mx-3 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
+                            href="#tab-2">
+                            <span class="text-dark" style="width: 150px;">Kokan</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
+                            href="#tab-3">
+                            <span class="text-dark" style="width: 150px;">Mumbai</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
+                            href="#tab-4">
+                            <span class="text-dark" style="width: 150px;">Mahabaleshwar</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
+                            href="#tab-5">
+                            <span class="text-dark" style="width: 150px;">Pune</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
+                            href="#tab-6">
+                            <span class="text-dark" style="width: 150px;">Kolhapur</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <div class="row g-4">
+                            <div class="col-xl-8">
+                                <div class="row g-4">
+                                    <div class="col-lg-6">
+                                        <div class="destination-img">
+                                            <img class="img-fluid rounded w-100" src="./Images/konkan-beaches.jpg"
+                                                alt="">
+                                            <div class="destination-overlay p-4">
+                                                <h4 class="text-white mb-2 mt-3">Kokan Darshan</h4>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="destination-img">
+                                            <img class="img-fluid rounded w-100" src="./Images/mumbai_destimg.jpeg"
+                                                alt="">
+                                            <div class="destination-overlay p-4">
+                                                <h4 class="text-white mb-2 mt-3">Mumbai</h4>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="destination-img">
+                                            <img class="img-fluid rounded w-100" src="./Images/dagdushet_img.jpg"
+                                                alt="">
+                                            <div class="destination-overlay p-4">
+                                                <h4 class="text-white mb-2 mt-3">Pune</h4>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="destination-img">
+                                            <img class="img-fluid rounded w-100" src="./Images/lonavala_img.jpeg"
+                                                alt="">
+                                            <div class="destination-overlay p-4">
+                                                <h4 class="text-white mb-2 mt-3">Lonavala</h4>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="destination-img h-100">
+                                    <img class="img-fluid rounded w-100 h-100" src="./Images/Ellora_Caves_img.jpg"
+                                        style="object-fit: cover; min-height: 300px;" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <h4 class="text-white mb-2 mt-3">Chh. Sambhaji Nagar</h4>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="./Images/nashik_destimg.jpeg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <h4 class="text-white mb-2 mt-3">Nashik</h4>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="./Images/mahabaleshwar.jpeg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <h4 class="text-white mb-2 mt-3">Mahabaleshwar</h4>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="./Images/Alibagh.jpeg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <h4 class="text-white mb-2 mt-3">Alibag</h4>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="./Images/kokan2.jpeg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <h4 class="text-white mb-2 mt-3">Kokan</h4>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="./Images/dudhsagarfalls.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <h4 class="text-white mb-2 mt-3">Dudhsagar Falls</h4>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="./Images/Ganpatipulebeach.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <h4 class="text-white mb-2 mt-3">Ganpatipule Beach</h4>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="./Images/sindhudurg-fort.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <h4 class="text-white mb-2 mt-3">Sindhudurg Fort</h4>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-3" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="./Images/gateway.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <h4 class="text-white mb-2 mt-3">Gateway Of India,Mumbai</h4>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="./Images/csmt_img.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <h4 class="text-white mb-2 mt-3">Chhatrapati Shivaji Maharaj Terminus</h4>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="./Images/marinedrive.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <h4 class="text-white mb-2 mt-3">Marine Drive</h4>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="./Images/basilica_img.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <h4 class="text-white mb-2 mt-3">Basilica of Bom Jesus</h4>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-4" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="./Images/mahabaleshwar-temple.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <h4 class="text-white mb-2 mt-3">Mahabaleshwar Temple</h4>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="./Images/VennaLake.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <h4 class="text-white mb-2 mt-3">Venna Lake</h4>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="./Images/karla-caves.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <h4 class="text-white mb-2 mt-3">Karla Caves</h4>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="./Images/Lonavala.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <h4 class="text-white mb-2 mt-3">Lonavala</h4>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-5" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="./Images/Shaniwaarwada.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <h4 class="text-white mb-2 mt-3">Shaniwaar wada</h4>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="./Images/Alandi.png" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <h4 class="text-white mb-2 mt-3">Alandi</h4>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="./Images/Khandoba-Mandir-jejuri.jpg"
+                                        alt="">
+                                    <div class="destination-overlay p-4">
+                                        <h4 class="text-white mb-2 mt-3">Jejuri</h4>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="./Images/dagdushet_pune.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <h4 class="text-white mb-2 mt-3">DagduShet</h4>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-6" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="./Images/package_kolhapur11.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <h4 class="text-white mb-2 mt-3">MahaLaxmi Temple</h4>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="./Images/Rankalalake.jpeg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <h4 class="text-white mb-2 mt-3">Rankala Lake</h4>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="./Images/panhala-fort.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <h4 class="text-white mb-2 mt-3">Panhala Fort</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="./Images/Jyotibatemple.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <h4 class="text-white mb-2 mt-3">Jyotiba Temple</h4>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Destination End -->
+
+    <!-- Packages Start -->
+    <div class="container-fluid packages py-5">
+        <div class="container py-5">
+            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                <h5 class="section-title px-3">Packages</h5>
+                <h1 class="mb-0">Awesome Packages</h1>
+            </div>
+            <div class="packages-carousel owl-carousel">
+                <div class="packages-item">
+                    <div class="packages-img">
+                        <img src="./Images/package_lonavala.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
+                            style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                            <small class="flex-fill text-center border-end py-2"><i
+                                    class="fa fa-map-marker-alt me-2"></i>Lonavala and Mahabaleshwar</small>
+                            <small class="flex-fill text-center border-end py-2"><i
+                                    class="fa fa-calendar-alt me-2"></i>3 days</small>
+
+                        </div>
+                        <div class="packages-price py-2 px-4"> 9,999/-</div>
+                    </div>
+                    <div class="packages-content bg-light">
+                        <div class="p-4 pb-0">
+                            <h5 class="mb-0">Lonavala And Mahabaleshwar Trip</h5>
+
+                            <div class="mb-3">
+
+                            </div>
+                            <p class="mb-4">
+
+                                <small class="fa fa-star text-primary"></small> Mahabaleshwar Temple <br>
+                                <small class="fa fa-star text-primary"></small> Venna Lake <br>
+                                <small class="fa fa-star text-primary"></small> Baneshwar Temple <br>
+                                <small class="fa fa-star text-primary"></small> Lohagad Fort <br>
+                                <small class="fa fa-star text-primary"></small> Dhobi WaterFall <br>
+                                <small class="fa fa-star text-primary"></small> Karla Caves <br>
+                                <small class="fa fa-star text-primary"></small> Lonavala <br>
+
+                            </p>
+                        </div>
+                        <div class="row bg-primary rounded-bottom mx-0">
+                            <div class="col-6 text-start px-0">
+                                
+                            </div>
+                            <div class="col-6 text-end px-0">
+                                <a href="#booknow" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="packages-item">
+                    <div class="packages-img">
+                        <img src="./Images/package_shirdi.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
+                            style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                            <small class="flex-fill text-center border-end py-2"><i
+                                    class="fa fa-map-marker-alt me-2"></i>Mumbai n Shirdi </small>
+                            <small class="flex-fill text-center border-end py-2"><i
+                                    class="fa fa-calendar-alt me-2"></i>3 days</small>
+                        </div>
+                        <div class="packages-price py-2 px-4">10,999/-</div>
+                    </div>
+                    <div class="packages-content bg-light">
+                        <div class="p-4 pb-0">
+                            <h5 class="mb-0">Mumbai to Shirdi Trip</h5>
+
+                            <div class="mb-3">
+
+                            </div>
+                            <p class="mb-4">
+                                <small class="fa fa-star text-primary"></small> Sai Baba Shirdi <br>
+                                <small class="fa fa-star text-primary"></small> Matheran <br>
+                                <small class="fa fa-star text-primary"></small> Alibaug <br>
+                                <small class="fa fa-star text-primary"></small> Elephanta Caves <br>
+                                <small class="fa fa-star text-primary"></small> Sanjay Gandhi National Park <br>
+                                <small class="fa fa-star text-primary"></small> Karnala Birds Sanctuary <br>
+                                <small class="fa fa-star text-primary"></small> Mumbai Darshan <br>
+                            </p>
+                        </div>
+                        <div class="row bg-primary rounded-bottom mx-0">
+                            <div class="col-6 text-start px-0">
+                                
+                            </div>
+                            <div class="col-6 text-end px-0">
+                                <a href="#booknow" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="packages-item">
+                    <div class="packages-img">
+                        <img src="./Images/package_kolhapur11.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
+                            style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                            <small class="flex-fill text-center border-end py-2"><i
+                                    class="fa fa-map-marker-alt me-2"></i>Kolhapur And Kokan</small>
+                            <small class="flex-fill text-center border-end py-2">
+                                <i class="fa fa-calendar-alt me-2"></i>3 days</small>
+                        </div>
+                        <div class="packages-price py-2 px-4">14,999/-</div>
+                    </div>
+                    <div class="packages-content bg-light">
+                        <div class="p-4 pb-0">
+                            <h5 class="mb-0">Kolhapur And Kokan Trip</h5>
+                            <div class="mb-3">
+
+                            </div>
+                            <p class="mb-4">
+
+                                <small class="fa fa-star text-primary"></small>MahaLaxmi Temple<br>
+                                <small class="fa fa-star text-primary"></small>Rankala Lake<br>
+                                <small class="fa fa-star text-primary"></small>Panhala Fort<br>
+                                <small class="fa fa-star text-primary"></small>Jyotiba Temple<br>
+                                <small class="fa fa-star text-primary"></small>Ganpatipule Beach<br>
+                                <small class="fa fa-star text-primary"></small>Sindhudurg Fort<br>
+                                <small class="fa fa-star text-primary"></small>Malvan<br>
+
+                            </p>
+                        </div>
+                        <div class="row bg-primary rounded-bottom mx-0">
+                            <div class="col-6 text-start px-0">
+                                
+                            </div>
+                            <div class="col-6 text-end px-0">
+                                <a href="#booknow" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="packages-item">
+                    <div class="packages-img">
+                        <img src="./Images/eloracaves11.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
+                            style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                            <small class="flex-fill text-center border-end py-2"><i
+                                    class="fa fa-map-marker-alt me-2"></i>Pune and Sambhaji Nagar</small>
+                            <small class="flex-fill text-center border-end py-2"><i
+                                    class="fa fa-calendar-alt me-2"></i>3 days</small>
+                        </div>
+                        <div class="packages-price py-2 px-4">16,999/-</div>
+                    </div>
+                    <div class="packages-content bg-light">
+                        <div class="p-4 pb-0">
+                            <h5 class="mb-0">Pune And Sambhaji Nagar Trip</h5>
+
+                            <div class="mb-3">
+
+                            </div>
+                            <p class="mb-4">
+
+                                <small class="fa fa-star text-primary"></small>Shaniwar Wada<br>
+                                <small class="fa fa-star text-primary"></small>Alandi<br>
+                                <small class="fa fa-star text-primary"></small>Jejuri<br>
+                                <small class="fa fa-star text-primary"></small>Red Fort<br>
+                                <small class="fa fa-star text-primary"></small>Shirdi<br>
+                                <small class="fa fa-star text-primary"></small>Ellora Caves<br>
+                                <small class="fa fa-star text-primary"></small>DagduShet Ganpati<br>
+
+                            </p>
+                        </div>
+                        <div class="row bg-primary rounded-bottom mx-0">
+                            <div class="col-6 text-start px-0">
+                                
+                            </div>
+                            <div class="col-6 text-end px-0">
+                                <a href="#booknow" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Packages End -->
+
+    <!-- Tour Booking Start -->
+    <div class="container-fluid booking py-5" id="booknow">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <h5 class="section-booking-title pe-3">Booking</h5>
+                    <h1 class="text-white mb-4">Online Booking</h1>
+                    <p class="text-white mb-4">Rest assured, your journey is in expert hands. Our team is dedicated to ensuring seamless logistics, comfortable accommodations, and enriching experiences every step of the way. From the moment you arrive until the last farewell, we're committed to crafting an unforgettable adventure tailored to your preferences.
+
+                        
+                    </p>
+                    <p class="text-white mb-4">So, pack your bags, gather your excitement, and prepare for the journey of a lifetime. Your adventure begins now!
+                        
+                        Thank you for choosing Maharashtra Travels. Let's create memories that will last a lifetime together.
+                    </p>
+                    
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="text-white mb-3">Book A Tour Pack</h1>
+                    <p class="text-white mb-4">Get On Your First Trip With Maharashtra Travels.</p>
+                    <form action="Booking" method="post">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control bg-white border-0" id="name" name="bname"
+                                        placeholder="Your Name" required>
+                                    <label for="name">Enter Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control bg-white border-0" name="bemail" id="email"
+                                        placeholder="Your Email" required>
+                                    <label for="email">Enter Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating date" id="date3" data-target-input="nearest">
+                                    <input type="date" class="form-control bg-white border-0" name="bdatetime"
+                                        id="datetime" placeholder="Date & Time" data-target="#date3"
+                                        data-toggle="datetimepicker" required />
+                                    <label for="datetime">Select Date </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <select class="form-select bg-white border-0" name="bdestination" id="select1"
+                                        required>
+
+                                        <option value="Lonavala And Mahabaleshwar Trip 9,999">Lonavala And Mahabaleshwar Trip 9,999</option>
+                                        <option value="Mumbai to Shirdi Trip 10,999">Mumbai to Shirdi Trip 10,999</option>
+                                        <option value="Kolhapur And Kokan Trip 14,999">Kolhapur And Kokan Trip 14,999</option>
+                                        <option value="Pune And Sambhaji Nagar Trip 16,999">Pune And Sambhaji Nagar Trip 16,999</option>
+                                    </select>
+                                    <label for="select1">Destination</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <select class="form-select bg-white border-0" name="bperson" id="SelectPerson"
+                                        required>
+                                       
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">more than 5</option>
+                                    </select>
+                                    <label for="SelectPerson">Enter Total No of People</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <select class="form-select bg-white border-0" name="bchild" id="CategoriesSelect"
+                                        required>
+                                        <option value="1">Kids</option>
+                                        <option value="4">0</option>
+                                        <option value="2">1</option>
+                                        <option value="3">2</option>
+                                        <option value="4">3</option>
+
+                                    </select>
+                                    <label for="CategoriesSelect">Enter persons below 12yrs</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control bg-white border-0" placeholder="Special Request"
+                                        name="bmessage" id="message" style="height: 100px"></textarea>
+                                    <label for="message">Special Request</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary text-white w-100 py-3" type="submit">Book Now</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Tour Booking End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright text-body py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-end mb-md-0">
+                    <i class="fas fa-copyright me-2"></i><a class="text-white" href="#">Maharashtra Travels </a> , All
+                    right
+                    reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-start">
+                    Designed By <a class="text-white" href="#">KK</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
